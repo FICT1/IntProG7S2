@@ -13,15 +13,15 @@ Algoritmo Completado
 			Leer b  
 			Escribir "Digita otro para sumarlo"  
 			Leer c  
-			d <- b + c  
+			d = b + c  
 			Escribir "La suma de tus numeros es: ", d  
 		Sino  
 			Si a = 2 Entonces  
-				Escribir "Digita un numero para restarlo"  
+				Escribir "Digita un numero para restar"  
 				Leer b  
-				Escribir "Digita otro numero para restarlo"  
+				Escribir "Digita otro numero para restar"  
 				Leer c  
-				d <- b - c  
+				d = b - c  
 				Escribir "La resta de tus numeros es: ", d  
 			Sino  
 				Si a = 3 Entonces  
@@ -30,7 +30,7 @@ Algoritmo Completado
 					Escribir "Digita otro numero para dividirlo"  
 					Leer c  
 					Si c <> 0 Entonces  
-						d <- b / c  
+						d = b / c  
 						Escribir "La division de tus numeros es: ", d  
 					Sino  
 						Escribir "Error: No se puede dividir entre 0"  
@@ -41,7 +41,7 @@ Algoritmo Completado
 						Leer b  
 						Escribir "Digita otro numero para multiplicarlo"  
 						Leer c  
-						d <- b * c  
+						d = b * c  
 						Escribir "La multiplicacion de tus numeros es: ", d  
 					FinSi  
 				FinSi  
@@ -51,19 +51,19 @@ Algoritmo Completado
 		Escribir "***********************************************"  
 		Escribir "Dime un numero para mostrarte su sucesor (5to ejercicio)"  
 		Leer num  
-		suce <- num + 1  
+		suce = num + 1  
 		Escribir "El sucesor es: ", suce  
 		
 		Escribir "Dime un numero para mostrarte el antecesor (5to ejercicio)"  
 		Leer num  
-		ante <- num - 1  
+		ante = num - 1  
 		Escribir "El antecesor es: ", ante  
 		
 		Escribir "***********************************************"  
 		Escribir "Escribe el radio del circulo para calcular el area (6to ejercicio)"  
 		Leer rad  
 		Si rad >= 0 Entonces  
-			area <- 3.1416 * rad^2  
+			area = 3.1416 * rad^2  
 			Escribir "El resultado es: ", area  
 		Sino  
 			Escribir "Error: El radio no puede ser negativo"  
@@ -73,7 +73,7 @@ Algoritmo Completado
 		Escribir "Escribe el monto de dolares para cambiar a cordobas (7mo ejercicio)"  
 		Leer dol  
 		Si dol >= 0 Entonces  
-			cord <- dol * 36.6243  
+			cord = dol * 36.6243  
 			Escribir "El total de cordobas son: ", cord  
 		Sino  
 			Escribir "Error: La cantidad no puede ser negativa"  
@@ -83,24 +83,24 @@ Algoritmo Completado
 		Escribir "Escribe el monto de cordobas para cambiar a dolares (8vo ejercicio)"  
 		Leer cord  
 		Si cord >= 0 Entonces  
-			dol <- cord / 36.6243  
+			dol = cord / 36.6243  
 			Escribir "El total de dolares son: ", dol  
 		Sino  
 			Escribir "Error: La cantidad no puede ser negativa"  
 		FinSi  
 		
 		Escribir "***********************************************"  
-		Escribir "¿Cuántas clases quieres evaluar?"  
+		Escribir "¿Cuántas clases quieres evaluar? (9no ejercicio)"  
 		Leer cantidad  
 		
 		Si cantidad > 0 Entonces  
-			suma <- 0  
-			Para i <- 1 Hasta cantidad Hacer  
+			suma = 0  
+			Para i = 1 Hasta cantidad Hacer  
 				Escribir "Ingresa la nota de la clase ", i, ":"  
 				Leer nota  
-				suma <- suma + nota  
+				suma = suma + nota  
 			FinPara  
-			promedio <- suma / cantidad  
+			promedio = suma / cantidad  
 			Escribir "Suma total de notas: ", suma  
 			Escribir "Cantidad de clases evaluadas: ", cantidad  
 			Escribir "Promedio final del estudiante: ", promedio  
@@ -109,23 +109,23 @@ Algoritmo Completado
 		FinSi  
 		
 		Escribir "***********************************************"  
-		Escribir "¿Cuántos productos diferentes vas a comprar?"  
+		Escribir "¿Cuántos productos diferentes vas a comprar? (10mo ejercicio)"  
 		Leer cant  
 		
 		Si cant > 0 Entonces  
-			total <- 0  
-			Para i <- 1 Hasta cant Hacer  
+			total = 0  
+			Para i = 1 Hasta cant Hacer  
 				Escribir "Ingresa el precio del producto ", i, ": "  
 				Leer precio  
 				Si precio >= 0 Entonces  
-					total <- total + precio  
+					total = total + precio  
 				Sino  
 					Escribir "Error: El precio no puede ser negativo"  
 				FinSi  
 			FinPara  
 			
-			descuento <- total * 0.10  
-			total_a_pagar <- total - descuento  
+			descuento = total * 0.10  
+			total_a_pagar = total - descuento  
 			
 			Escribir "-------------------------------------"  
 			Escribir "Total sin descuento: ", total  

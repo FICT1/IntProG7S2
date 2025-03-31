@@ -4,6 +4,6 @@ Algoritmo cuadradodelsucesor
 	escribir "Dime un numero" 
 	leer num 
 	cuadr = (num + 1) ^2
-	escribir "Tu numero al cuadrado del sucesor del dicho numero es: " cuadr
+	escribir "Tu numero al cuadrado del sucesor de " num " es: " cuadr
 	
 FinAlgoritmo
